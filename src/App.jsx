@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import LoginPage from './pages/LoginPage';
 import StorePage from './pages/StorePage';
+import GuidePage from './pages/GuidePage';
 import Layout from './components/Layout';
 
 function PrivateRoute({ children }) {
@@ -21,6 +22,7 @@ export default function App() {
           }
         >
           <Route path="/stores" element={<StorePage />} />
+          <Route path="/guide" element={<GuidePage />} />
         </Route>
         <Route path="*" element={<Navigate to="/login" replace />} />
       </Routes>
