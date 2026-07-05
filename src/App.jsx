@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import LoginPage from './pages/LoginPage';
 import StorePage from './pages/StorePage';
 import GuidePage from './pages/GuidePage';
+import ChatPage from './pages/ChatPage';
 import Layout from './components/Layout';
 
 function PrivateRoute({ children }) {
@@ -14,6 +15,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/chat" element={<ChatPage />} />
         <Route
           element={
             <PrivateRoute>
