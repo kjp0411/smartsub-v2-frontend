@@ -20,6 +20,7 @@ export default function Layout() {
       <nav style={{ padding: '1rem', borderBottom: '1px solid #ddd', display: 'flex', gap: '1rem' }}>
         <Link to="/stores">매장 관리</Link>
         <Link to="/guide">가이드 문서</Link>
+        <Link to="/reports">인사이트 리포트</Link>
         <button onClick={handleLogout} style={{ marginLeft: 'auto' }}>
           로그아웃
         </button>
