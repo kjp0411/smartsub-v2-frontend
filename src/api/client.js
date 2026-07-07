@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const client = axios.create({
-  baseURL: 'http://localhost:8080/api/v1',
+  baseURL: 'https://api.smartsub.dev/api/v1',
 });
 
 client.interceptors.request.use((config) => {
